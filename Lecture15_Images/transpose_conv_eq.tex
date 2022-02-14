@@ -1,0 +1,53 @@
+
+\documentclass[preview,border=10pt]{standalone}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+
+\begin{document}
+
+\begin{equation*}
+    \mathsf{W}^\text{T} \bm{z} =      
+    \begin{bmatrix} 
+        \rotatebox{90}{$[w_{u-0}]$}  \\
+        & \rotatebox{90}{$[w_{u-1}]$} \\
+        && \ddots  \\
+        &&& \rotatebox{90}{$[w_{u-1}]$}
+    \end{bmatrix} 
+    \begin{bmatrix}
+        z_{0} \\
+        z_{1} \\
+        \vdots   \\
+        z_{m-1} \\
+    \end{bmatrix}
+    =    
+    \begin{bmatrix} 
+        {\rotatebox{90}{$[w_{u-0}]$}}  \\
+        \phantom{\rotatebox{90}{$[w_{u-1}]$}} \\
+        \phantom{\ddots}  \\
+        \phantom{\rotatebox{90}{$[w_{u-1}]$}}
+    \end{bmatrix} 
+    z_0
+    +
+    \begin{bmatrix} 
+        \phantom{\rotatebox{90}{$[w_{u-0}]$}} \\
+        {\rotatebox{90}{$[w_{u-1}]$}} \\
+        \phantom{\ddots}  \\
+        \phantom{\rotatebox{90}{$[w_{u-1}]$}}
+    \end{bmatrix} 
+    z_1
+    +
+    \ldots 
+    +
+    \begin{bmatrix} 
+        \phantom{\rotatebox{90}{$[w_{u-0}]$}} \\
+        \phantom{\rotatebox{90}{$[w_{u-1}]$}} \\
+        \phantom{\ddots}  \\
+        {\rotatebox{90}{$[w_{u-1}]$}}
+    \end{bmatrix} 
+    z_{m-1}   
+\end{equation*}
+
+\end{document}
