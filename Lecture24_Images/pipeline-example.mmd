@@ -1,0 +1,8 @@
+graph LR
+    input{{"samples.csv"}} --> 
+    preprocess["PCA"]:::highlight --> 
+    features{{"reduced.csv"}} --> 
+    model["logistic regression"]:::highlight --> 
+    output{{"classifier.pkl"}}
+    classDef default fill:#00c0c3, stroke-width:0
+    classDef highlight fill:#f9c437
